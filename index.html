@@ -105,7 +105,7 @@
 
       // إرسال الطلب إلى FastAPI
       try {
-        const response = await fetch(`http://localhost:8000/chat?query=${encodeURIComponent(text)}`);
+        const response = await fetch(`http://127.0.0.1:8000/chat?query=${encodeURIComponent(text)}`);
         const data = await response.json();
 
         // عرض الرد من البوت
